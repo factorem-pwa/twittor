@@ -1,17 +1,17 @@
 var url = window.location.href;
-var swLoc = '/twittor/sw.js';
+var swLoc = '/sw.js';
 
 if ( navigator.serviceWorker ){
 
     if (url.includes('localhost')) {
-        swLoc = '\sw.js';
+        swLoc = '/sw.js';
     }
     navigator.serviceWorker.register( swLoc );
 }
 
 
 // Referencias de jQuery
-
+/*
 var titulo      = $('#titulo');
 var nuevoBtn    = $('#nuevo-btn');
 var salirBtn    = $('#salir-btn');
@@ -132,4 +132,4 @@ postBtn.on('click', function() {
 
     crearMensajeHTML( mensaje, usuario );
 
-});
+});*/
