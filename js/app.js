@@ -3,8 +3,8 @@ var swLoc = '/twittor/sw.js';
 
 if ( navigator.serviceWorker ){
 
-    if (url.includes('localhost')) {
-        swLoc = '\sw.js';
+    if (url.includes('localhost') || url.includes('127.0.0.1')) {
+        swLoc = '/sw.js';
     }
     navigator.serviceWorker.register( swLoc );
 }
