@@ -1,0 +1,13 @@
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    /* margin: 3vh 0 3vh 0; */
+    text-align: center;
+  }
